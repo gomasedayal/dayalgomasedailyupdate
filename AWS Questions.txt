@@ -1,0 +1,90 @@
+1. What is AWS?
+Amazon Web Services (AWS) is a comprehensive and widely adopted cloud platform offered by Amazon. 
+It provides a range of cloud services such as computing power, storage options, and networking capabilities. 
+AWS enables businesses and developers to deploy, manage, and scale applications without the need for physical hardware.
+
+What are the key services provided by AWS?
+AWS offers numerous services categorized into different domains. Some of the key services include:
+
+Compute: Amazon EC2, AWS Lambda
+Storage: Amazon S3, Amazon EBS
+Databases: Amazon RDS, Amazon DynamoDB
+Networking: Amazon VPC, Amazon Route 53
+Analytics: Amazon EMR, Amazon Redshift
+
+What is an EC2 instance?
+Amazon EC2 (Elastic Compute Cloud) is a web service that provides secure, resizable compute capacity in the cloud. 
+An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the AWS infrastructure.
+
+How do you launch an EC2 instance?
+To launch an EC2 instance:
+
+Open the Amazon EC2 console.
+Click “Launch Instance.”
+Choose an Amazon Machine Image (AMI).
+Select an instance type based on your requirements.
+Configure instance details, such as the number of instances and network settings.
+Add storage by specifying the size and type of the volume.
+Configure security groups to control inbound and outbound traffic.
+Review and launch the instance.
+Create or select an existing key pair for SSH access.
+
+What is S3 in AWS?
+Amazon S3 (Simple Storage Service) is a scalable object storage service that allows users to store and retrieve any amount of 
+data at any time from anywhere on the web. It is designed for 99.999999999% (11 nines) durability.
+
+Explain the difference between S3 and EBS.
+
+S3 (Simple Storage Service): Object storage service, used for storing and retrieving any amount of data. 
+                             It is highly durable and accessible over the internet.
+
+EBS (Elastic Block Store):   Block storage service, used as storage volumes for EC2 instance
+
+
+What are the benefits of using AWS?
+
+Scalability: Easily scale resources up or down as needed.
+Cost-effective: Pay only for the resources you use.
+Security: Offers robust security features and compliance certifications.
+Flexibility: Wide range of services and tools to build and manage applications.
+Global Reach: Availability zones in multiple regions worldwide.
+
+
+What is AWS Lambda?
+AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers. 
+You can run your code in response to events, such as changes to data in an S3 bucket or an update to a DynamoDB table.
+
+What is an AMI?
+An Amazon Machine Image (AMI) is a pre-configured template for an EC2 instance that contains the information required 
+to launch an instance. This includes the operating system, application server, and applications.
+
+What is Auto Scaling?
+Auto Scaling is an AWS service that automatically adjusts the number of EC2 instances in response to changing application demand. 
+This ensures that you have the right number of instances running to handle the current load on your application.
+
+Example:
+You can configure an Auto Scaling group to automatically add more EC2 instances when the CPU utilization exceeds a specified threshold, 
+and remove instances when the utilization drops below the threshold.
+
+Explain the different types of load balancers in AWS.
+AWS offers three types of load balancers:
+
+Application Load Balancer (ALB): Operates at the application layer (HTTP/HTTPS), ideal for web applications.
+Network Load Balancer (NLB): Operates at the transport layer (TCP/UDP), suited for high-performance and low-latency applications.
+Classic Load Balancer (CLB): Operates at both the application and transport layers, used for applications built within the EC2-Classic network.
+
+What is Amazon RDS?
+Amazon Relational Database Service (RDS) is a managed database service that simplifies the setup, operation, and scaling of relational 
+databases in the cloud. It supports multiple database engines, including MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server.
+
+What is the difference between RDS and DynamoDB?
+Amazon RDS: A managed relational database service supporting structured query language (SQL) databases.
+Amazon DynamoDB: A managed NoSQL database service designed for fast and predictable performance with seamless scalability.
+
+What is AWS Snowball?
+AWS Snowball is a data transport solution that uses secure physical devices to transfer large amounts of data into and out of AWS. 
+It helps with data migration, disaster recovery, and content distribution.
+
+Example:
+A company can use Snowball to move petabytes of data from their on-premises data center to AWS without using the internet, significantly 
+reducing transfer times.
